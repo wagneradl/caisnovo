@@ -1,0 +1,147 @@
+/*==========================================================================
+Search Box CSS
+==========================================================================*/
+.header__area {
+	&-right {
+		max-width: 25%;
+		flex: 0 0 25%;
+		// padding-right: 15px;
+		// padding-left: 15px;
+		display: flex;
+		justify-content: end;
+		margin-left: auto;
+		&-btn {
+			margin-top: 7px;
+		}
+	}
+}
+
+/*==========================================================================
+Responsive Menu Css
+========================================================================== */
+.responsive-menu {
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: 100%;
+}
+.mean-container {
+	a.meanmenu-reveal {
+		color: $secondary-color;
+		width: 25px;
+		height: 31px;
+		top: -7px;
+		transition: all 0s ease-out 0s;
+		span {	
+			background: $secondary-color;
+			margin-top: 6px;		
+		}
+	}
+	.mean-bar {
+		background: transparent;
+		padding-top: 0;
+		padding-left: 2px;
+		z-index: 99;
+		a i {
+			font-size: 22px;
+			padding-top: 4px;
+			display: block;
+		}
+	}
+	.mean-nav {
+		background: $white;
+		margin-top: 59px;
+		box-shadow: 0 0 30px $shadow;
+		li:first-child > a {
+			border: none;
+		}
+		ul li a.mean-expand {
+			background: $primary-color;
+			height: 34px;
+			color: $white;
+			&:hover {
+			background: $primary-color;
+			}
+		}
+	}
+}
+.mean-container .mean-nav ul li a,
+.mean-container .mean-nav ul li li a,
+.mean-container .mean-nav li li:first-child > a {
+	color: $secondary-color;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-family: $inter;
+	border-top: 1px solid $border;
+	opacity: 1;
+}
+
+@media (max-width: 1320px) {
+    .header__area {
+		&-logo {
+			max-width: 20%;
+			flex: 0 0 20%;
+		}
+		&-center {
+			max-width: 80%;
+			flex: 0 0 80%;
+		}
+		&-right {
+			max-width: 0%;
+			flex: 0 0 0%;
+			&-btn {
+				display: none;
+			}
+		}
+    }
+}
+@media (max-width: 1100px) {
+    .header__area {
+		&-logo {
+			max-width: 20%;
+			flex: 0 0 20%;
+		}
+		&-center {
+			max-width: 80%;
+			flex: 0 0 80%;
+		}
+		&-right {
+			display: none;
+		}
+    }
+}
+@media (max-width: 991px) {
+    .header__area {
+		padding: 15px 15px;
+		&-logo {
+			position: relative;
+			max-width: 100%;
+			flex: 0 0 100%;    
+            a {
+                img {
+                    max-width: 98px;
+                    z-index: 999;
+                    position: relative;
+                }
+            }
+		}
+        .responsive-menu {
+            display: block;
+        }
+    }
+}
+@media (max-width: 574px) {
+    .header__area {
+		padding: 15px 0;
+    }
+}
+
+.mean-container .mean-nav {
+	position: fixed;
+    top: 16px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}

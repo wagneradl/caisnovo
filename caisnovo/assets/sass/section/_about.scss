@@ -1,0 +1,105 @@
+/*==========================================================================
+About
+========================================================================== */
+.about__area {
+    &-left {
+        max-width: 500px;
+    }
+    &-right {
+        position: relative;        
+        &-content {
+            background: $primary-color;
+            padding: 40px 40px;
+            padding-bottom: 35px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: -150px;
+            left: 0;
+            width: 270px;
+            height: 318px;
+            span {
+                color: $secondary-color;
+                font-size: 144px;
+                line-height: 90px;
+                font-family: $dm;
+                font-weight: 400;
+            }
+            sup {
+                color: $secondary-color;
+                line-height: 90px;
+                font-family: $dm;
+                font-size: 80px;
+                font-weight: 300;
+            }
+            p {
+                color: $secondary-color;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+        }
+        &-image {
+            img {
+                max-width: 85%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .about__area {
+        &-right {
+            margin-bottom: 41px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .about__area {
+        &-right {
+            margin-bottom: 41px;       
+            &-content {
+                background: $primary-color;
+                padding: 15px 30px;
+                padding-bottom: 25px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                width: 150px;
+                height: 153px;
+                span {
+                    font-size: 60px;
+                    line-height: 55px;
+                }
+                sup {
+                    font-size: 35px;
+                    line-height: 55px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+            }
+            &-image {
+                img {
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+    .number-wrapper {
+        display: inline-flex;
+        align-items: baseline;
+    }
+}
+

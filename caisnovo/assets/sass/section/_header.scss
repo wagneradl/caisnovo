@@ -11,7 +11,7 @@ Header Menu
         width: 100%;
         box-shadow: 0px 0px 20px $shadow;
         animation: header_sticky 1.1s;
-        background: $white;
+        background-color: $thin-bg;
         display: block;
     }
     @keyframes header_sticky {
@@ -30,7 +30,7 @@ Header Menu
         a {
             display: inline-block;
             img {
-                max-width: 129px;
+                max-width: 114.55px;
                 z-index: 999;
                 position: relative;
             }

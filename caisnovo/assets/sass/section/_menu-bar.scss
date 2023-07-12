@@ -81,19 +81,16 @@ Responsive Menu Css
 @media (max-width: 1320px) {
     .header__area {
 		&-logo {
-			max-width: 20%;
-			flex: 0 0 20%;
+			max-width: 15%;
+			flex: 0 0 15%;
 		}
 		&-center {
-			max-width: 80%;
-			flex: 0 0 80%;
+			max-width: 60%;
+			flex: 0 0 60%;
 		}
 		&-right {
-			max-width: 0%;
-			flex: 0 0 0%;
-			&-btn {
-				display: none;
-			}
+			max-width: 25%;
+			flex: 0 0 25%;
 		}
     }
 }
@@ -104,11 +101,12 @@ Responsive Menu Css
 			flex: 0 0 20%;
 		}
 		&-center {
-			max-width: 80%;
-			flex: 0 0 80%;
+			max-width: 60%;
+			flex: 0 0 60%;
 		}
 		&-right {
-			display: none;
+			max-width: 20%;
+			flex: 0 0 20%;
 		}
     }
 }
@@ -126,6 +124,9 @@ Responsive Menu Css
                     position: relative;
                 }
             }
+		}
+		&-right {
+			display: none;
 		}
         .responsive-menu {
             display: block;

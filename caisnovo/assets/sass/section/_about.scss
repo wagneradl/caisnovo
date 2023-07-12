@@ -3,42 +3,41 @@ About
 ========================================================================== */
 .about__area {
     &-left {
-        max-width: 500px;
+        max-width: 600px;
     }
     &-right {
-        position: relative;        
+        position: relative;      
         &-content {
             background: $primary-color;
-            padding: 40px 40px;
-            padding-bottom: 35px;
+            padding: 0px 13px 15px 13px;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             position: absolute;
-            bottom: -150px;
+            bottom: 60px;
             left: 0;
-            width: 270px;
-            height: 318px;
+            width: 160px;
+            height: 160px;
             span {
                 color: $secondary-color;
-                font-size: 144px;
+                font-size: 72px;
                 line-height: 90px;
                 font-family: $dm;
                 font-weight: 400;
             }
             sup {
                 color: $secondary-color;
-                line-height: 90px;
+                line-height: 32px;
                 font-family: $dm;
-                font-size: 80px;
-                font-weight: 300;
+                font-size: 42px;
+                font-weight: 400;
             }
             p {
                 color: $secondary-color;
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 12px;
+                line-height: 16px;
                 font-weight: 600;
             }
         }
@@ -63,17 +62,9 @@ About
         &-right {
             margin-bottom: 41px;       
             &-content {
-                background: $primary-color;
                 padding: 15px 30px;
-                padding-bottom: 25px;
-                text-align: center;
-                display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
                 bottom: -40px;
-                left: 0;
                 width: 150px;
                 height: 153px;
                 span {
@@ -96,10 +87,6 @@ About
                 }
             }
         }
-    }
-    .number-wrapper {
-        display: inline-flex;
-        align-items: baseline;
     }
 }
 

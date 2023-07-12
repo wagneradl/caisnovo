@@ -146,7 +146,7 @@ Theme Btn CSS
 	font-weight: 700;
 	overflow: hidden;
 	transition: all 0.4s ease-out 0s;
-	border-radius: 3px;
+	border-radius: 2px;
 	background-color: $primary-color;
 	text-transform: uppercase;
 	z-index: 3;
@@ -198,32 +198,43 @@ Theme Btn CSS
 	width: 100%;
 	opacity: 1;
 }
-.simple-btn {
-	display: inline-block;
-	color: $secondary-color;
-	font-size: 16px;
-	line-height: 26px;
-	font-weight: 600;
-	transition: all 0.3s ease-in-out;
-	text-transform: uppercase;
-	position: relative;	
-	&::after {
-		position: absolute;
-		content: '';
-		width: 50px;
-		height: 2px;
-		background: $primary-color;
-		bottom: 0;
-		left: 0;
-		transition: all 0.3s ease-in-out;		
+
+@media (max-width: 1200px) {
+
+	.theme-banner-btn,
+	.theme-btn {
+		width: 111%;
+		padding: 0 23.5px;
+		text-align: center;
 	}
-	&:hover {
-		color: $primary-color;
-		&::after {
-			width: 100%;
-		}
-	}
-}
+}	
+
+// .simple-btn {
+// 	display: inline-block;
+// 	color: $secondary-color;
+// 	font-size: 16px;
+// 	line-height: 26px;
+// 	font-weight: 600;
+// 	transition: all 0.3s ease-in-out;
+// 	text-transform: uppercase;
+// 	position: relative;	
+// 	&::after {
+// 		position: absolute;
+// 		content: '';
+// 		width: 50px;
+// 		height: 2px;
+// 		background: $primary-color;
+// 		bottom: 0;
+// 		left: 0;
+// 		transition: all 0.3s ease-in-out;		
+// 	}
+// 	&:hover {
+// 		color: $primary-color;
+// 		&::after {
+// 			width: 100%;
+// 		}
+// 	}
+// }
 /*==========================================================================
 Preloader CSS
 ========================================================================== */

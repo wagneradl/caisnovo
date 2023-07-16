@@ -5,8 +5,10 @@ About
     &-left {
         max-width: 600px;
     }
+
     &-right {
-        position: relative;      
+        position: relative;
+
         &-content {
             background: $primary-color;
             padding: 0px 13px 15px 13px;
@@ -20,6 +22,7 @@ About
             left: 0;
             width: 160px;
             height: 160px;
+
             span {
                 color: $secondary-color;
                 font-size: 72px;
@@ -27,6 +30,7 @@ About
                 font-family: $dm;
                 font-weight: 400;
             }
+
             sup {
                 color: $secondary-color;
                 line-height: 32px;
@@ -34,6 +38,7 @@ About
                 font-size: 42px;
                 font-weight: 400;
             }
+
             p {
                 color: $secondary-color;
                 font-size: 12px;
@@ -41,12 +46,41 @@ About
                 font-weight: 600;
             }
         }
+
         &-image {
             img {
                 max-width: 85%;
             }
         }
     }
+}
+
+#heroimgmob {
+    display: none;
+}
+
+#countermob {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#introequipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 55%;
+    padding-top: 100px;
+}
+
+#introequipe p {
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -60,33 +94,143 @@ About
 @media (max-width: 540px) {
     .about__area {
         &-right {
-            margin-bottom: 41px;       
             &-content {
-                padding: 15px 30px;
-                flex-direction: column;
-                bottom: -40px;
-                width: 150px;
-                height: 153px;
-                span {
-                    font-size: 60px;
-                    line-height: 55px;
-                }
-                sup {
-                    font-size: 35px;
-                    line-height: 55px;
-                }
-                p {
-                    font-size: 12px;
-                    line-height: 18px;
-                    font-weight: 500;
-                }
+                display: none;
             }
+
             &-image {
                 img {
-                    max-width: 90%;
+                    transform: scale(1.2);
+                    overflow: hidden;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 100%;
+                    display: none;
                 }
             }
         }
     }
+
+    .mabout__area {
+        &-right {
+            &-content {
+                background-color: $primary-color;
+                padding: 15px 30px;
+                display: flex;
+                width: 150px;
+                height: 153px;
+
+                span {
+                    color: $secondary-color;
+                    font-size: 60px;
+                    font-family: $dm;
+                    font-weight: 400;
+                    line-height: 72px;
+                }
+
+                sup {
+                    color: $secondary-color;
+                    font-family: $dm;
+                    font-size: 35px;
+                    padding-top: 10px;
+                    left: -5px;
+                }
+
+                p {
+                    color: $secondary-color;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: 600;
+                    padding: 0px 50px 0px 10px;
+                }
+            }
+
+            &-image {
+                img {
+                    transform: scale(1.2);
+                    overflow: hidden;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 100%;
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    #heromobimg {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
+        margin-top: -60px;
+    }
+
+    #heroimgmob {
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        overflow: hidden;
+        display: block;
+        padding-top: 50px;
+    }
+
+    #countermob {
+        display: flex;
+        position: absolute;
+        bottom: -82px;
+        text-align: left;
+        align-items: center;
+        width: 295px;
+        height: 125px;
+    }
+
+    .number-wrapper {
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+    }
+
+    .counter {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .superscript {
+        font-size: 12px;
+        vertical-align: super;
+        margin-left: 2px;
+    }
+
+    .experience-text {
+        margin-left: 5px;
+    }
+
+#introequipe {
+    width: 100%;
+    padding-top: 0px
 }
 
+.team__area-left-content {
+    margin-top: 400px;
+}
+
+}
+
+.team__area-left-content {
+    transition: opacity 0.6s, transform 0.6s;
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .team__area-left-content.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }

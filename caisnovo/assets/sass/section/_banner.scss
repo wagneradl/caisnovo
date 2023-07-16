@@ -5,19 +5,20 @@ Banner
 	background-image: url(/caisnovo/assets/img/img-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 	position: relative;
     &-content {
         padding: 200px 0px;
-        max-width: 700px;
+        max-width: 65%;
         h1 {
-            font-size: 100px;
-            line-height: 110px;
+            font-size: 72px;
+            line-height: 95px;
             color: $white;
             margin-bottom: 15px;
             font-weight: 400;
         }
         p {
-            font-size: 24px;
+            font-size: 18px;
             line-height: 32px;
             color: $border1;
             margin-bottom: 25px;
@@ -86,7 +87,12 @@ Banner
 }
 @media (max-width: 575px) {
 	.banner__area {
+        background-image: url(/caisnovo/assets/img/IMG-HEADER-MOBILE.png);
+        background-color: #161616;
+        background-size: 200%;
+        background-position: top left;
         &-content {
+            max-width: 100%;
             padding: 120px 0px;
             h1 {
                 font-size: 58px;
@@ -112,13 +118,9 @@ Banner
         margin: 0;
     }
 
-    .banner__area {
-        background-image: url(/caisnovo/assets/img/img-header.jpg);
-        background-size: 153%;
-        background-position: left top;
-        background-color: #161616;
-        background-repeat: no-repeat;
-        position: relative;
+
+    #heromobile {
+        line-height: 66px;
     }
 
 }

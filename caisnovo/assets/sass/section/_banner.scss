@@ -2,7 +2,7 @@
 Banner 
 ========================================================================== */
 .banner__area {
-	background-image: url(/caisnovo/assets/img/img-header.jpg);
+	background-image: url(caisnovo/assets/img/img-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,7 +87,7 @@ Banner
 }
 @media (max-width: 575px) {
 	.banner__area {
-        background-image: url(/caisnovo/assets/img/IMG-HEADER-MOBILE.png);
+        background-image: url(caisnovo/assets/img/IMG-HEADER-MOBILE.png);
         background-color: #161616;
         background-size: 200%;
         background-position: top left;

@@ -3,7 +3,7 @@ Header Menu
 ========================================================================== */
 .header__area {
     &-sticky-menu {
-        position: fixed;
+        position: sticky;
         left: 0;
         top: 0;
         right: 0;
@@ -89,3 +89,4 @@ Header Menu
         }
     }
 }
+

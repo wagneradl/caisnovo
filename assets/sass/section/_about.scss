@@ -83,6 +83,10 @@ About
     text-align: center;
 }
 
+#introequipe h2 {
+    text-align: center;
+}
+
 @media (max-width: 991px) {
     .about__area {
         &-right {
@@ -216,6 +220,14 @@ About
 
 .team__area-left-content {
     margin-top: 400px;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.team__area .t-border {
+    padding: 45px 0px !important;
 }
 
 }

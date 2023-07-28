@@ -173,3 +173,21 @@ var swiper = new Swiper(".team-slider", {
     );
   });
 })(jQuery);
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  freeMode: true, // Habilita a navegação livre entre os cards
+  freeModeSticky: true, // Centraliza o card mais próximo ao soltar a navegação
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      spaceBetween: 60,
+    },
+  },
+});

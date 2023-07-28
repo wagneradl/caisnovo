@@ -161,6 +161,16 @@ Team
         }
     }
 }
+
+div.row.align-items-center.t-border > div.col-xl-5.col-lg-5.lg-mb-30 {
+    padding-bottom: 100px;
+}
+
+div.service__area.section-padding.thin-bg {
+    background-color: #3C3932;
+}
+
+
 .team__area-right-slide-item.swiper-slide.swiper-slide-active {
     .team__area-right-slide-item-content {
         bottom: 70px;
@@ -274,6 +284,13 @@ Team
         .team__area-right-slide-item-content {
             bottom: 90px;
         }
+    }
+    div.row.align-items-center.t-border > div.col-xl-5.col-lg-5.lg-mb-30 {
+        padding-bottom: 0px;
+    }
+
+    div.service__area.section-padding.thin-bg {
+       margin-top: 400px;
     }
 }
 @media (max-width: 490px) {

@@ -341,3 +341,121 @@ Services
 .buttonservices {
     padding: 0 33px;
 }
+
+@media (max-width: 540px) {
+
+    .service__area .section-padding {
+        padding: 345px 0px !important;
+}
+
+}
+
+#secserv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.service__area-left-title#introequipe {
+    padding-top: 0px;
+  }
+
+  .service__area .swiper-parent {
+    width: 969px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 90px;
+    }
+    
+    .service__area .swiper-container {
+    overflow: hidden;
+    position: relative;
+    }
+    
+    .service__area .swiper-slide {
+    box-sizing: border-box;
+    width: 283px !important;
+    height: 506px !important;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7.95px;
+    background-color: #F5F1E7;
+    }
+    
+    .service__area .swiper-button-next, .service__area .swiper-button-prev {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+    }
+    
+    .service__area .swiper-button-next {
+    right: -120px;
+    }
+    
+    .service__area .swiper-button-prev {
+    left: -120px;
+    }
+    
+    .custom-next-button {
+        color: white; /* Define a cor da seta */
+        
+      }
+
+.servcircle {
+    border-radius: 100px;
+    width: 159px;
+    height: 159px;
+    background-color: #F7CD46;
+}
+
+    @media(max-width: 540px) {
+    .service__area .swiper-parent {
+    width: 100%;
+    padding-top: 0px;
+    }
+    .service__area .swiper-slide {
+    margin-right: 20px;
+    }
+    .service__area .swiper-button-next, .service__area .swiper-button-prev {
+    display: none;
+    }
+    }
+    
+    .swiper-parent .swiper-container .swiper-wrapper .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .centered-div {
+        top: 60px;
+        position: absolute;
+      }
+      
+      .left-div {
+        text-align: left;
+        width: 70%;
+        position: absolute;
+        top: 0px;
+        margin-top: 250px;
+      }
+    
+      .consultoria-btn {
+        color: #F5F1E7;
+        text-transform: uppercase;
+        background: none;
+        border: 1px solid #F5F1E7;
+        border-radius: 50px;
+        padding: 24px 52px;
+        width: 390px;
+        display: block;
+      }
+      

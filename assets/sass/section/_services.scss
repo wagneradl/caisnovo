@@ -475,7 +475,7 @@ div.service__area-left-title#introequipe {
     .scrolling-left {
         display: flex;
         flex-direction: row;
-        animation: marqueeLeft 15s linear infinite;
+        animation: marqueeLeft 30s linear infinite;
     }
 
     @keyframes marqueeLeft {
@@ -486,7 +486,7 @@ div.service__area-left-title#introequipe {
     .scrolling-right {
     display: flex;
     flex-direction: row;
-    animation: marqueeRight 15s linear infinite;
+    animation: marqueeRight 30s linear infinite;
 }
 
 @keyframes marqueeRight {

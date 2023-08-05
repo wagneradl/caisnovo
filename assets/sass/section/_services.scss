@@ -448,7 +448,13 @@ div.service__area-left-title#introequipe {
         margin-top: 250px;
       }
     
-      .consultoria-btn {
+      .containerbtn {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .consultoria-btn {
         color: #F5F1E7;
         text-transform: uppercase;
         background: none;
@@ -457,5 +463,33 @@ div.service__area-left-title#introequipe {
         padding: 24px 52px;
         width: 390px;
         display: block;
-      }
-      
+        pointer-events: none;
+    }
+    
+    .btn-group {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .scrolling-left {
+        display: flex;
+        flex-direction: row;
+        animation: marqueeLeft 15s linear infinite;
+    }
+
+    @keyframes marqueeLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    .scrolling-right {
+    display: flex;
+    flex-direction: row;
+    animation: marqueeRight 15s linear infinite;
+}
+
+@keyframes marqueeRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}

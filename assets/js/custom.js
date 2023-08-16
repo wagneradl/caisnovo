@@ -19,30 +19,32 @@
     }
   });
   /*==========  Team Slider  ==========*/
-var swiper = new Swiper(".team-slider", {
-	slidesPerView: 1,
-	loop: true,
-	speed: 600,
-	autoplay: {
-	  delay: 3000,
-	},
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
-	on: {
-	  slideChangeTransitionStart: function () {
-		var activeIndex = this.realIndex;
-		var teamMembersInfo = document.querySelectorAll('.team__area-left-content');
-		teamMembersInfo.forEach(function (member, index) {
-		  if (index === activeIndex) {
-			member.classList.add('active');
-		  } else {
-			member.classList.remove('active');
-		  }
-		});
-	  },
-	},
+  var swiper = new Swiper(".team-slider", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 600,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        var activeIndex = this.realIndex;
+        var teamMembersInfo = document.querySelectorAll(
+          ".team__area-left-content"
+        );
+        teamMembersInfo.forEach(function (member, index) {
+          if (index === activeIndex) {
+            member.classList.add("active");
+          } else {
+            member.classList.remove("active");
+          }
+        });
+      },
+    },
   });
 
   /*==========  counterUp  ==========*/
@@ -174,21 +176,59 @@ var swiper = new Swiper(".team-slider", {
   });
 })(jQuery);
 
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: "auto",
   spaceBetween: 30,
   freeMode: true, // Habilita a navegação livre entre os cards
   freeModeSticky: true, // Centraliza o card mais próximo ao soltar a navegação
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     540: {
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       slidesPerGroup: 1,
       spaceBetween: 60,
     },
   },
 });
 
+var campaignSwiper = new Swiper(".campaignSwiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  freeMode: true, // Habilita a navegação livre entre os cards
+  freeModeSticky: true, // Centraliza o card mais próximo ao soltar a navegação
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  },
+});
+
+var swiper = new Swiper(".caseSwiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  freeMode: false, // Habilita a navegação livre entre os cards
+  freeModeSticky: false, // Centraliza o card mais próximo ao soltar a navegação
+  navigation: {
+    nextEl: ".swiper-button-next-vid",
+    prevEl: ".swiper-button-prev-vid",
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  },
+});
